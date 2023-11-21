@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
+import '@/app/globals.css'
+import About_Us  from './(component)/About_Us/About_Us';
+import Navbar from './(component)/Navbar/Navbar' 
+// import {NextUIProvider} from '@nextui-org/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +19,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"></link>
+      </head>
+      <body className={inter.className}>
+       <Navbar/>
+       {/* <NextUIProvider> */}
+      {children}
+    {/* </NextUIProvider> */}
+       <About_Us/>
+        </body>
     </html>
   )
 }
