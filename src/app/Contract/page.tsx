@@ -1,7 +1,13 @@
+import Navbar from "../(component)/Navbar/Navbar";
+
 const Contract=()=>{
     return(
 
         <>
+       <section className="Sub-header">
+        <Navbar/>
+        <h1>Contract Now</h1>
+        </section>
         {/* // <!-- Contact Us Section Start --> */}
 
         <section className="loacation">

@@ -1,8 +1,13 @@
 import Image from "next/image"
+import Navbar from "../(component)/Navbar/Navbar";
 
 const Blog=()=>{
     return(
-        
+      <> 
+     <section className="Sub-header">
+<Navbar/>
+<h1>Blogs</h1>
+</section>
     <section className="blog-content">
         <div className="row">
             <div className="blog-left">
@@ -69,7 +74,7 @@ const Blog=()=>{
             </div>
         </div>
     </section>
-
+    </> 
    
       )
     }

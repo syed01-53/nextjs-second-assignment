@@ -1,9 +1,12 @@
 import Image from "next/image";
-
+import Navbar from "../(component)/Navbar/Navbar";
 const Course=()=>{
     return(
         <>
-
+       <section className="Sub-header">
+<Navbar/>
+<h1>Our Courses</h1>
+</section>
         <section className="course">
         <h1>Course We Offer</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>

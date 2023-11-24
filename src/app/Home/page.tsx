@@ -4,29 +4,15 @@ let styleObject ={
     backgroundColor :'black',
     color:'white'
   }
-import Front from "../(component)/forntpage/front";
+import Header from "../(component)/Header/Header";
 const Home=()=>{
     return(
        
        
     <>
-      <Front/>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br /><br />
-      <br /><br />
-      <br />
-      <br /><br />
-      <br /><br />
-      <br />
-      <br /><br />
-      <br /><br />
-      <br />
+    <Header/>
+    
+      
       <section className="course">
         <div className="PageBlock">
             <div className="verticalLine"></div>
@@ -166,7 +152,7 @@ const Home=()=>{
     {/* <!-- Testimonials Section End -->
 
     <!-- Call To Action Section Start --> */}
-    <section className="cta" style={styleObject}>
+    <section className="cta" >
         <h1>GET READY FOR A BRIGHT FUTURE</h1>
         <a href="./Contact" className="hero_btn">CONTACT US</a>
     </section>

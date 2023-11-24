@@ -2,12 +2,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 
 let styleObject ={
-  backgroundColor :'black',
-  color:'white'
+//   backgroundColor :'black',
+  color:'black'
 }
 const Navbar =()=>{
 return(
-    <nav style={styleObject}>
+    
+    <nav >
     <Link href="./Home" className="logo">Xplore
         <i className="fab fa-staylinked"></i>kill
     </Link>
@@ -16,7 +17,7 @@ return(
         <i className="fa fa-times" ></i>
         <ul>
           
-            <li><Link href="./Home">Home</Link></li>
+            <li ><Link href="./Home">Home</Link></li>
             <li><Link href="./Course">Course</Link></li>
             <li><Link href="./Blog">Blog</Link></li>
             <li><Link href="./About">About</Link></li>

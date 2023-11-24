@@ -1,9 +1,15 @@
 import Image from "next/image";
+import Navbar from "../(component)/Navbar/Navbar";
 const About=()=>{
 return(
 
 
 // <!-- About Us Section Start -->
+<>
+<section className="Sub-header">
+<Navbar/>
+<h1>About Us</h1>
+</section>
 
 <section className="about-us">
     <div className="row">
@@ -26,7 +32,7 @@ return(
         </div>
     </div>
 </section>
-
+</>
 
 
 
