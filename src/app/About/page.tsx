@@ -6,10 +6,8 @@ return(
 
 // <!-- About Us Section Start -->
 <>
-<section className="Sub-header">
-<Navbar/>
-<h1>About Us</h1>
-</section>
+
+<Navbar title="About Us"/>
 
 <section className="about-us">
     <div className="row">

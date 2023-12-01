@@ -3,10 +3,10 @@ import Navbar from "../(component)/Navbar/Navbar";
 const Course=()=>{
     return(
         <>
-       <section className="Sub-header">
-<Navbar/>
-<h1>Our Courses</h1>
-</section>
+     {/* we are using pops that pass data from parent to children  */}
+<Navbar title="Course"/>
+
+
         <section className="course">
         <h1>Course We Offer</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>

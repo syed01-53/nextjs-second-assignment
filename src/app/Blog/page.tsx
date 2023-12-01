@@ -4,10 +4,10 @@ import Navbar from "../(component)/Navbar/Navbar";
 const Blog=()=>{
     return(
       <> 
-     <section className="Sub-header">
-<Navbar/>
-<h1>Blogs</h1>
-</section>
+     
+<Navbar title="Blog"/>
+
+
     <section className="blog-content">
         <div className="row">
             <div className="blog-left">

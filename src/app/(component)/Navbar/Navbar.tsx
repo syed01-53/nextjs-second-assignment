@@ -1,13 +1,15 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
+import React from 'react';
 
 let styleObject ={
 //   backgroundColor :'black',
   color:'black'
 }
-const Navbar =()=>{
+const Navbar =(props:any)=>{
+ 
 return(
-    
+    <section className="Sub-header">
     <nav >
     <Link href="./Home" className="logo">Xplore
         <i className="fab fa-staylinked"></i>kill
@@ -27,6 +29,9 @@ return(
     <i className="fa fa-bars" ></i>
     {/* <!-- Reposnive bar open and close --> */}
 </nav>
+{/* we are using props that transfer data from parent component  */}
+<h1>{props.title}</h1>
+</section>
 )
 }
 export default Navbar
